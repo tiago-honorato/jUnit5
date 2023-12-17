@@ -29,11 +29,33 @@ class CalculadoraTest {
 	}
 	
 	@Test
+	void verifyMultTwoNumbers() {
+		
+		Calculadora calc = new Calculadora();
+		
+		double result = calc.multiplicar(2, 10);
+		
+		assertEquals(20, result);
+		
+	}
+	
+	@Test
+	void verifyDivTwoNumbers() {
+		
+		Calculadora calc = new Calculadora();
+		
+		double result = calc.dividir(50, 2);
+		
+		assertEquals(25, result);
+		
+	}
+	
+	@Test
 	void verifyEven() {
 		
 		Calculadora calc = new Calculadora();
 		
-		boolean even = calc.verifyEven(10);
+		boolean even = calc.verificaPar(10);
 		
 		assertTrue(even);
 		

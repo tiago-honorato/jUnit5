@@ -14,15 +14,21 @@ public class Calculadora {
 		
 	}
 	
-	public boolean verifyEven(int a) {
+	public double multiplicar(int a, int b) {
 		
-		return a % 2 == 0;
+		return a * b;
 		
 	}
 	
-	public String verifyString(String a) {
+	public double dividir(int a, int b) {
 		
-		return a;
+		return a / b;
+		
+	}
+	
+	public boolean verificaPar(int a) {
+		
+		return a % 2 == 0;
 		
 	}
 
